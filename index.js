@@ -4,10 +4,11 @@ const path = require('path');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
+//generateHtml
+const teamHtml = require('./src/teamHtml')
 //inquirer package
 const inquirer = require('inquirer');
-//generateHtml
-const generateHtml = require('./src')
+
 
 //inquirer prompt 
 const addEmployee = () => 
@@ -39,7 +40,7 @@ function writeToFile(fileName, data) {
 //initialize app
 function init() {
 inquirer.prompt(addEmployee).then((response) => {
-    writeToFile('index.html', generateHtml(response));
+    writeToFile('teamHtml.js', generateHtml(response));
 });
 
 };
