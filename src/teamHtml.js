@@ -11,3 +11,6 @@ return `
 
 `;
 }
+
+
+module.exports = generateHtml;

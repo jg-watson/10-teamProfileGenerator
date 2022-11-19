@@ -45,4 +45,4 @@ inquirer.prompt(addEmployee).then((response) => {
 
 };
 
-init();
+addEmployee()
