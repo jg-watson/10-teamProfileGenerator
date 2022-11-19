@@ -9,3 +9,6 @@ Node Inquirer and Jest are required for this project.
 
 ## Usage 
 Knowledge of Javascript and Node package modules.
+
+## Test
+Npm Test
